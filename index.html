@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-5">
+
+    <!-- block -->
+    <div class="flex justify-between rounded-lg bg-sky-200 " onmouseover="this.style.backgroundColor=getRandomColor()"
+        onmouseout="this.style.backgroundColor='blue'">
+        <div class="mx-4 px-4">
+            <h1 class="my-3 text-2xl font-bold ">Interactive</h1>
+            <h3 class="my-3 text-lg font-bold ">Geometry Genius</h3>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+            <a href="blog.html" class="bg-sky-500 py-2 px-10 font-bold rounded m-3 text-white">Blog
+            </a>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="grid grid-cols-4 gap-4 mt-5 ">
+        <!-- 1st -->
+
+        <div class="grid grid-cols-3  col-span-3 gap-2 ">
+
+            <!-- tringle -->
+            <div class="border border-[.5px] rounded  flex flex-col items-center"
+                onmouseover="this.style.backgroundColor=getRandomColor()"
+                onmouseout="this.style.backgroundColor='white'">
+                <img class="mt-5" src="images/triangle.png" alt="">
+                <h1 class="my-2">tringle</h1>
+                <p my-2>Area (A) = <span>0.5*b</span> <span>h</span></p>
+                <div class="flex ">
+                    <div class="flex m-3"><input id="tri-in-1" class="text-center rounded-lg outline-none w-1/2"
+                            type="text" placeholder="b">
+                        <p class="ml-2">cm</p>
+                    </div>
+                    <div class="flex m-3"><input id="tri-in-2" class="text-center rounded-lg outline-none w-1/2"
+                            type="text" placeholder="h">
+                        <p class="ml-2">cm</p>
+                    </div>
+                </div>
+                <p class="my-2">ans</p>
+                <button id="tri-btn"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5">calculate</button>
+            </div>
+            <!-- rectangle -->
+            <div class="border border-[.5px] rounded flex flex-col items-center "
+                onmouseover="this.style.backgroundColor=getRandomColor()"
+                onmouseout="this.style.backgroundColor='white'">
+                <img class="mt-5" src="images/rectangle.png" alt="">
+                <h1 class="my-2">Rectangle</h1>
+                <p my-2>Area (A) = <span>w * </span> <span>l</span></p>
+                <div class="flex ">
+                    <div class="flex m-3"><input id="rec-in-1" class="text-center rounded-lg outline-none w-1/2 "
+                            type="text" placeholder="w">
+                        <p class="ml-2">cm</p>
+                    </div>
+                    <div class="flex m-3"><input id="rec-in-2" class="text-center rounded-lg outline-none  w-1/2"
+                            type="text" placeholder="l">
+                        <p class="ml-2">cm</p>
+                    </div>
+                </div>
+                <p class="my-2">ans</p>
+                <button id="rec-btn"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5">calculate</button>
+            </div>
+
+
+            <!-- parallelogram -->
+            <div class="border border-[.5px] rounded  flex flex-col items-center"
+                onmouseover="this.style.backgroundColor=getRandomColor()"
+                onmouseout="this.style.backgroundColor='white'">
+                <img class="mt-5" src="images/parallelogram.png" alt="">
+                <h1 class="my-2">parallelogram</h1>
+                <p my-2>Area (A) = <span> b* </span> <span>h</span></p>
+                <div class="flex ">
+                    <div class="flex m-3"><input id="par-in-1" class="text-center rounded-lg outline-none w-1/2"
+                            type="text" placeholder="b">
+                        <p class="ml-2">cm</p>
+                    </div>
+                    <div class="flex m-3"><input id="par-in-2" class="text-center rounded-lg outline-none w-1/2"
+                            type="text" placeholder="h">
+                        <p class="ml-2">cm</p>
+                    </div>
+                </div>
+                <p class="my-2">ans</p>
+                <button id="par-btn"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5">calculate</button>
+            </div>
+            <!-- pentagon -->
+            <div class="border border-[.5px] rounded  flex flex-col items-center"
+                onmouseover="this.style.backgroundColor=getRandomColor()"
+                onmouseout="this.style.backgroundColor='white'">
+                <img class="mt-5" src="images/pentagon.png" alt="">
+                <h1 class="my-2">pentagon</h1>
+                <p my-2>Area (A) = <span>0.5*p </span> <span>b</span></p>
+                <div class="flex ">
+                    <div class="flex m-3"><input id="pen-in-1" class="text-center rounded-lg outline-none w-1/2"
+                            type="text" placeholder="p">
+                        <p class="ml-2">cm</p>
+                    </div>
+                    <div class="flex m-3"><input id="pen-in-2" class="text-center rounded-lg outline-none w-1/2"
+                            type="text" placeholder="b">
+                        <p class="ml-2">cm</p>
+                    </div>
+                </div>
+                <p class="my-2">ans</p>
+                <button id="pen-btn"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5">calculate</button>
+            </div>
+
+            <!-- rombos -->
+            <div class="border border-[.5px] rounded  flex flex-col items-center"
+                onmouseover="this.style.backgroundColor=getRandomColor()"
+                onmouseout="this.style.backgroundColor='white'">
+                <img class="mt-5" src="images/rhombus.png" alt="">
+                <h1 class="my-2">rhombus</h1>
+                <p my-2>Area (A) = <span>0.5* d<sub>1</sub> </span> <span>d<sub>2</sub></span></p>
+                <div class="flex ">
+                    <div class="flex m-3"><input id="rho-in-1" class="text-center rounded-lg outline-none w-1/2"
+                            type="text" placeholder=" d1">
+                        <p class="ml-2">cm</p>
+                    </div>
+                    <div class="flex m-3"><input id="rho-in-2" class="text-center rounded-lg outline-none w-1/2"
+                            type="text" placeholder="d2">
+                        <p class="ml-2">cm</p>
+                    </div>
+                </div>
+                <p class="my-2">ans</p>
+                <button id="rho-btn"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5">calculate</button>
+            </div>
+            <!-- ellipse -->
+            <div class="border border-[.5px] rounded  flex flex-col items-center"
+                onmouseover="this.style.backgroundColor=getRandomColor()"
+                onmouseout="this.style.backgroundColor='white'">
+                <img class="mt-5" src="images/ellipse.png" alt="">
+                <h1 class="my-2">ellipse</h1>
+                <p my-2>Area (A) = <span>3.1416 </span> <span>a</span>b</p>
+                <div class="flex ">
+                    <div class="flex m-3"><input id="ell-in-1" class="text-center rounded-lg outline-none w-1/2"
+                            type="text" placeholder="b">
+                        <p class="ml-2">cm</p>
+                    </div>
+                    <div class="flex m-3"><input id="ell-in-2" class="text-center rounded-lg outline-none w-1/2"
+                            type="text" placeholder="h">
+                        <p class="ml-2">cm</p>
+                    </div>
+                </div>
+                <p class="my-2">ans</p>
+                <button id="ell-btn"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-5">calculate</button>
+            </div>
+
+
+
+        </div>
+
+
+        <!-- 2nd -->
+
+        <div class="col-span-1 border border-[.5px] rounded">
+            <h5 class="text-center mt-5 text-lg">Area calculate</h5>
+            <ol id="ollist" class="list-decimal mt-5">
+
+            </ol>
+
+        </div>
+
+
+    </div>
+
+    <script src="js/function.js"></script>
+</body>
+
+
+</html>

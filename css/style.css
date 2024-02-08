@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+}
+
+.banner {
+    background-color: lightblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h1 {
+    color: darkgrey;
+    font-weight: bold;
+}
+
+.banner button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
