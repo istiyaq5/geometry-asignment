@@ -1,3 +1,6 @@
+// tringle
+
+
 document.getElementById('tri-btn').addEventListener('click', function () {
     var inputvalue1 = document.getElementById('tri-in-1').value;
     var inputvalue2 = document.getElementById("tri-in-2").value;
@@ -14,6 +17,9 @@ document.getElementById('tri-btn').addEventListener('click', function () {
     creatare('triangle', total)
 }
 )
+
+// rectengle
+
 
 
 document.getElementById('rec-btn').addEventListener('click', function () {
@@ -34,6 +40,8 @@ document.getElementById('rec-btn').addEventListener('click', function () {
 )
 
 
+// parallelogram
+
 document.getElementById('par-btn').addEventListener('click', function () {
     var inputvalue1 = document.getElementById('par-in-1').value;
     var inputvalue2 = document.getElementById("par-in-2").value;
@@ -52,6 +60,8 @@ document.getElementById('par-btn').addEventListener('click', function () {
 )
 
 
+// pentagon 
+
 document.getElementById('pen-btn').addEventListener('click', function () {
     var inputvalue1 = document.getElementById('pen-in-1').value;
     var inputvalue2 = document.getElementById("pen-in-2").value;
@@ -69,7 +79,7 @@ document.getElementById('pen-btn').addEventListener('click', function () {
 }
 )
 
-
+// rhombos
 
 
 document.getElementById('rho-btn').addEventListener('click', function () {
@@ -89,7 +99,7 @@ document.getElementById('rho-btn').addEventListener('click', function () {
 }
 )
 
-
+// ellipse
 
 document.getElementById('ell-btn').addEventListener('click', function () {
     var inputvalue1 = document.getElementById('ell-in-1').value;
@@ -108,6 +118,8 @@ document.getElementById('ell-btn').addEventListener('click', function () {
 }
 )
 
+
+// Function for area calculation
 
 
 function creatare(input, input2) {
@@ -139,7 +151,8 @@ function creatare(input, input2) {
     }
 }
 
+//function for rendom color
 
 function getRandomColor() {
     return '#' + Math.floor(Math.random() * 16777215).toString(16);
-  }
+}
